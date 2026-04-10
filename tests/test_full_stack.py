@@ -174,7 +174,6 @@ def test_scenario_maturity_decay():
 
 def test_vol_surface_bounds():
     """Verify vol surface extrapolation stays within reasonable bounds."""
-    import numpy as np
     from quant_alpha.pricing.vol_surface import VolSurface
     
     strikes = np.array([90, 100, 110])
