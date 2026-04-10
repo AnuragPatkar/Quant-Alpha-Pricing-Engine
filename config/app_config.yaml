@@ -1,0 +1,32 @@
+app:
+  name: Quant Alpha Pricing Engine
+  env: dev
+
+# Environment-specific overrides
+environments:
+  dev:
+    streamlit:
+      max_mc_paths: 131072
+      default_steps: 800
+    risk:
+      log_level: DEBUG
+      var_confidence: 0.99
+  staging:
+    streamlit:
+      max_mc_paths: 524288
+      default_steps: 1200
+    risk:
+      log_level: INFO
+      var_confidence: 0.99
+  prod:
+    streamlit:
+      max_mc_paths: 262144
+      default_steps: 1600
+    risk:
+      log_level: WARNING
+      var_confidence: 0.999
+
+risk:
+  var_confidence: 0.99
+  horizon_days: 1
+  max_correlation_spot_vol: -0.75

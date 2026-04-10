@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+numba
+plotly
+streamlit
+pydantic
+pyyaml
+httpx
+pytest
+ruff
+mypy
+pytest-cov
+types-PyYAML

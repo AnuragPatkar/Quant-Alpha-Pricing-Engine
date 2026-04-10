@@ -1,0 +1,3 @@
+from typing import Protocol, Any
+class TickObserver(Protocol):
+    def on_tick(self, symbol: str, tick: Any) -> None: ...

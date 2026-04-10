@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-alpha-pricing-engine"
+version = "0.1.0"
+description = "Quantitative Alpha Pricing Engine"
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+include = ["quant_alpha*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
+check_untyped_defs = false
+disallow_untyped_defs = false
