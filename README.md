@@ -1,4 +1,4 @@
-# Quant Alpha Pricing Engine
+# Quant Alpha Pricing Engine & Risk Dashboard
 
 **Institutional-grade derivatives valuation and portfolio risk framework** in pure Python, built for quantitative research, backtesting, and risk analytics. Features multi-engine pricing (Black-Scholes, binomial lattice, Monte Carlo), vectorized Greeks, Delta-Gamma-Vega VaR, and interactive Streamlit dashboard.
 
